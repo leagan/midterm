@@ -11,7 +11,7 @@ var Flag = 0
 var Flag2 = 0
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(1024, 700);
 	background(100,100,50);
 
 angleMode(DEGREES)
@@ -56,10 +56,10 @@ function draw() {
 	
 	if (Flag){drawdots();}
 	fill(r,b,g)
-	ellipse(windowWidth/2, windowHeight/2, 600, 600);
+	ellipse(1024/2, 700/2, 600, 600);
 	noStroke()
 	fill(10)
-	ellipse(windowWidth/2, windowHeight/2, 20,20);
+	ellipse(1024/2, 700/2, 20,20);
 	
 
 	
@@ -86,12 +86,12 @@ function mousePressed() {
 }
 		
 function GrowCircle(){
-	ellipse(windowWidth/2, windowHeight/2,frameCount, frameCount)
+	ellipse(1024/2, 700/2,frameCount, frameCount)
 }
 		
 	function drawdots(){ 
-	for (var p=0; p<windowWidth; p+=50){
-	for (var q=0; q<windowHeight;q+=50){
+	for (var p=0; p<1024; p+=50){
+	for (var q=0; q<700;q+=50){
 	ellipse(p,q,10,10); }}}
 
 function textureFlag () {
